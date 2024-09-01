@@ -33,7 +33,7 @@ cd responsiveDesigns
 
 ### 4. Install Sass via npm
 ```bash
-npm install -g sass
+npm install --save-dev sass
 ```
 
 ### 5. Install Project Dependencies
