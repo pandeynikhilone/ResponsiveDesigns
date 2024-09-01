@@ -23,7 +23,7 @@ If you don't have Node.js and npm installed, download and install them from the 
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/yourusername/responsiveDesigns.git
+git clone https://github.com/pandeynikhilone/ResponsiveDesigns.git
 ```
 
 ### 3. Navigate to the Project Directory
