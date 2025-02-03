@@ -2,6 +2,7 @@
 @use 'abstracts/mixins';
 @use 'abstracts/functions';
 
+
 @use 'base/reset';
 @use 'base/typography';
 @use 'base/utilities';
@@ -19,3 +20,4 @@
 @use 'pages/contact';
 
 @use 'vendors/font';
+@use 'abstracts/media';

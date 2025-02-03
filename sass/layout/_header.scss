@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as *;
+
+// Mobile Navigation (Hidden by Default)
+.mobile-navigation {
+  font-family: $font-family-1;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background: $bg-red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: right 0.3s ease-in-out;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    &:hover {
+      transition: all 0.33s ease-in;
+      color: $hover-color;
+    }
+  }
+  span {
+    position: relative;
+    right: 5rem;
+    cursor: pointer;
+    scale: 1.7;
+    color: $hover-color;
+  }
+}
+
+// Hamburger Menu Styling
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+  justify-self: end;
+  padding: 0.8rem;
+
+  span {
+    width: 30px;
+    height: 3px;
+    background: $menu-bar-color;
+    transition: 0.3s;
+  }
+}
+

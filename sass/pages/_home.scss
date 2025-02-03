@@ -3,7 +3,9 @@
 #mainSection {
   background: $bg-red url(../../assets/Home/01-Main/Bg-Image.svg) 50% / contain
     no-repeat;
-  height: 100%;
+  position: relative;
+  height: 48.0625rem;
+
 }
 .content__img--image {
   max-width: 100%;
@@ -11,8 +13,7 @@
 .section-1 {
   background: #fff9e9 url(../../assets/Home/02-section/01-section/Bg-Image.svg)
     50% / cover no-repeat;
-  height: 50rem;
-  padding: 5rem 6.35rem;
+   height: 50rem;
   &__icon {
     display: flex;
     justify-content: center;

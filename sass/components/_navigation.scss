@@ -6,6 +6,7 @@
   align-items: center;
   grid-template-columns: 1fr 2fr;
   padding: 0.65rem 0rem 0rem 0rem;
+  position: sticky;
   &__right {
     justify-self: flex-end;
     padding-inline: clamp(1rem, 2rem, 4rem);

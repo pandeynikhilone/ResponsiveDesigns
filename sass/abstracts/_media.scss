@@ -1,0 +1,79 @@
+@use "./variables" as *;
+
+@media (max-width: 1024px) {
+  .navigation__right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .mobile-navigation.active {
+    right: 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  /* Home */
+  .content__text {
+    &--label {
+      font-size: 1.0375rem;
+    }
+
+    &--heading-1,
+    &--heading-2 {
+      margin: 0rem 0rem;
+      font-size: 4.1875rem;
+    }
+    &--para {
+      margin: 1.2rem 0rem;
+    }
+    &--button {
+      padding: 1.01875rem 1.3675rem 1.03125rem 1.4rem;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .content {
+    margin: 0;
+    padding: 0;
+    &__img--image {
+      scale: 0.7;
+      align-self: start;
+    }
+  }
+  .content__text {
+    &--label {
+      font-size: 1.0375rem;
+      margin: 0;
+    }
+
+    &--heading-1,
+    &--heading-2 {
+      font-size: 4.1875rem;
+      margin: 0;
+    }
+    &--para {
+      margin: 1.2rem 0rem;
+      font-size: 0.675rem;
+      margin: 0;
+    }
+    &--button {
+      padding: 1.01875rem 1.3675rem 1.03125rem 1.4rem;
+    }
+    &--img {
+      margin: 0;
+    }
+  }
+//   .grid-content {
+//     grid-template-columns: repeat(1, 1fr);
+//   }
+}
