@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 27px 0px 0px 50px;
+  margin-block: 1.2rem;
+  text-align: center;
+}
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: flex-end;
+  margin-block: 2.5rem;
+}

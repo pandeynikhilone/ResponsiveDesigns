@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+
+.navigation {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  padding: 0.65rem 0rem 0rem 0rem;
+  &__right {
+    justify-self: flex-end;
+    padding-inline: clamp(1rem, 2rem, 4rem);
+    font-family: $font-family-1;
+    display: flex;
+    gap: 1rem;
+    & a {
+      color: $color-white;
+      text-decoration: none;
+      padding-block: 5px;
+      font-weight: 700;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0.21rem;
+        width: 0;
+        background: $hover-color;
+      }
+      &:hover {
+        transition: all 0.33s ease-in;
+        color: $hover-color;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

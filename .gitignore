@@ -1,0 +1,6 @@
+node_modules/
+
+# If you want to ignore the lock file as well (optional)
+yarn.lock
+package-lock.json
+package.json
